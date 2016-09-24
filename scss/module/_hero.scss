@@ -1,16 +1,20 @@
 .hero {
+    font-family: 'Quicksand', sans-serif;
     margin-top: 42.1875px; //height of the .site-header
+    text-align: center;
 }
 
 .hero__content {
-    text-align: center;
+    border-top: 2px solid $gray;
+    border-bottom: 2px solid $gray;
+    margin: 2em auto;
+    width: 30em;
 }
 
 .hero__content__headline {
     color: $black;
-    font-size: 3.5em;
+    font-size: 1.5em;
     font-weight: 300;
-    margin: 0;
 }
 
 .hero__content__date {
@@ -21,7 +25,7 @@
 
 .hero__image {
     width: 64em;
-    margin: 0 auto;
+    margin: 2em auto;
     padding: 0 1em;
     max-width: 100%;
 }
