@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "phillips-wedding",
   "version": "0.2.5",
-  "description": "A sample Node.js app using Express 4",
+  "description": "Phillips Wedding",
   "engines": {
     "node": "5.9.1"
   },
@@ -15,12 +15,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "git+https://github.com/markandjanina/phillipswedding.git"
   },
   "keywords": [
     "node",
-    "heroku",
     "express"
   ],
-  "license": "MIT"
+  "bugs": {
+    "url": "https://github.com/markandjanina/phillipswedding/issues"
+  },
+  "homepage": "https://github.com/markandjanina/phillipswedding#readme",
+  "devDependencies": {},
+  "author": "Janina Velasco",
+  "license": "ISC"
 }
