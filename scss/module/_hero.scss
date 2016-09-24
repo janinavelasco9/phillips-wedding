@@ -1,0 +1,27 @@
+.hero {
+    margin-top: 42.1875px; //height of the .site-header
+}
+
+.hero__content {
+    text-align: center;
+}
+
+.hero__content__headline {
+    color: $black;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.hero__content__date {
+    color: $black;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.hero__image {
+    width: 64em;
+    margin: 0 auto;
+    padding: 0 1em;
+    max-width: 100%;
+}

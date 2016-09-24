@@ -1,2 +1,125 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.app {
+  margin-top: 3.75em; }
+
+img {
+  max-width: 100%;
+  border: none; }
+
+.container {
+  max-width: 46em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em; }
+
+.container:after, h1:after, h2:after, h3:after, .l-stack-split:after, .l-stack-split__item:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.link, .link--transition {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none; }
+
+.link--transition {
+  transition: color 0.7s ease; }
+  .link--transition:hover {
+    color: #bfbaba; }
+
+.link--header {
+  transition: color 0.7s ease; }
+  .link--header:hover {
+    color: #E28FA5; }
+
+.list--bare {
+  padding: 0; }
+  .list--bare li {
+    list-style-type: none; }
+
+.list--inline li {
+  display: inline-block;
+  margin-right: 1.5em; }
+  .list--inline li:last-child {
+    margin-right: 0; }
+
+body {
+  font-size: 1em;
+  font-family: 'Oxygen';
+  line-height: 1.3; }
+
+h1, h2, h3 {
+  color: #756B6B;
+  clear: both;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif; }
+
 h1 {
-  color: red; }
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #E28FA5; }
+
+h3 {
+  font-size: 1.3em; }
+
+p {
+  margin-bottom: .3em; }
+
+.section-title {
+  border-bottom: 2px solid #bfbaba; }
+
+.site-header {
+  background-color: #FFF;
+  padding: 0 .8em;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%; }
+
+.hero {
+  margin-top: 42.1875px; }
+
+.hero__content {
+  text-align: center; }
+
+.hero__content__headline {
+  color: #333;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin: 0; }
+
+.hero__content__date {
+  color: #333;
+  font-size: 1.5em;
+  margin: 0; }
+
+.hero__image {
+  width: 64em;
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 100%; }
+
+.l-stack-split {
+  display: block; }
+  @media screen and (min-width: 43.75em) {
+    .l-stack-split {
+      display: flex; } }
+
+.l-stack-split__item {
+  flex: 1; }
+
+.l-stack-split__item:first-child {
+  margin-right: 0;
+  margin-bottom: .5em; }
+  @media screen and (min-width: 43.75em) {
+    .l-stack-split__item:first-child {
+      margin-right: 2em;
+      margin-bottom: 0; } }

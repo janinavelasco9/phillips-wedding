@@ -1,15 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <% include ../partials/header.ejs %>
-</head>
+    <head>
+      <% include ../partials/header.ejs %>
+    </head>
 
-<body>
+    <body>
+         <% include ../partials/nav.ejs %>
 
-  <% include ../partials/nav.ejs %>
+         <div class="app">
+             <div class="site-header">
+                 <ul class="container list--bare list--inline">
+                     <li>
+                         <a class="link link--header" href="#about-us">Our Story</a>
+                     </li>
 
-<h1>test</h1>
+                     <li>
+                         <a class="link link--header" href="#">Ceremony</a>
+                     </li>
 
+                     <li>
+                         <a class="link link--header" href="#">Reception</a>
+                     </li>
 
-</body>
+                     <li>
+                         <a class="link link--header" href="#">Registry</a>
+                     </li>
+                 </ul>
+             </div>
+
+             <div class="hero">
+                 <div class="hero__image">
+                     <img src="images/janina-mark.jpg" alt="" />
+                 </div>
+                 <div class="hero__content">
+                     <h1 class="hero__content__headline">
+                         JANINA &amp; MARK
+                     </h1>
+                     <p class="hero__content__date">
+                         April 22nd, 2017
+                     </p>
+                 </div>
+             </div>
+
+             <div class="container">
+                 <h1 id="about-us" class="section-title">
+                     The Bride and Groom
+                 </h1>
+
+                 <div class="l-stack-split">
+                     <div class="l-stack-split__item">
+                         <h2>
+                             Janina
+                         </h2>
+                         <p>
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                         </p>
+                     </div>
+                     <div class="l-stack-split__item">
+                         <h2>
+                             Mark
+                         </h2>
+
+                         <p>
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                         </p>
+                     </div>
+                 </div>
+
+                 <h1 class="section-title">
+                     How We Met
+                 </h1>
+                 <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                 </p>
+
+                 <h1 class="section-title">
+                     The Proposal
+                 </h1>
+                 <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                 </p>
+             </div>
+         </div>
+    </body>
 </html>

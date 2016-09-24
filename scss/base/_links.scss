@@ -1,0 +1,22 @@
+.link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link--transition {
+    @extend .link;
+    transition: color 0.7s ease;
+
+    &:hover{
+        color: $secondary-color--light;
+    }
+}
+
+.link--header {
+    transition: color 0.7s ease;
+
+    &:hover{
+        color: $coral;
+    }
+}
