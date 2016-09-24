@@ -7,6 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "postinstall": "gulp build",
     "start": "node index.js"
   },
   "dependencies": {
@@ -25,7 +26,13 @@
     "url": "https://github.com/markandjanina/phillipswedding/issues"
   },
   "homepage": "https://github.com/markandjanina/phillipswedding#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  },
   "author": "Janina Velasco",
   "license": "ISC"
 }
