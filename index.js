@@ -13,8 +13,18 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/our-wedding', function(request, response) {
+  response.render('pages/our-wedding');
+});
+
+app.get('/photographs', function(request, response) {
+  response.render('pages/photographs');
+});
+
+app.get('/details', function(request, response) {
+  response.render('pages/details');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
-
-

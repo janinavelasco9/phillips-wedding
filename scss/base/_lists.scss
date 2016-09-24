@@ -1,4 +1,4 @@
-.list--bare {
+.list {
     padding: 0;
 
     li {
@@ -14,5 +14,11 @@
         &:last-child {
             margin-right: 0;
         }
+    }
+}
+
+.list--padding {
+    li {
+        padding: 0.5em 0;
     }
 }
