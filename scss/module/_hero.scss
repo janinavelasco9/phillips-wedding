@@ -7,7 +7,11 @@
     border-top: 2px solid $gray-light;
     border-bottom: 2px solid $gray-light;
     margin: 2em auto;
-    width: 30em;
+    width: 80%;
+
+    @media screen and (min-width: $mobile-breakpoint) {
+        width: 50%;
+    }
 }
 
 .hero__content__headline {

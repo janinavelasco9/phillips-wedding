@@ -1,18 +1,23 @@
+$mobile-breakpoint: 38em;
+
 * {
   box-sizing: border-box;
 }
 
 body {
+    position: relative;
+    overflow-x: hidden;
     margin: 0;
-}
-
-.app {
-    margin-top: 3.75em; //height of the .site-header
+    padding: 0;
 }
 
 img {
     max-width: 100%;
     border: none;
+}
+
+.app {
+    margin-top: 3.25em; //height of the .site-header
 }
 
 .container {
@@ -22,7 +27,6 @@ img {
     padding: 0 1em;
     @extend %clearfix;
 }
-
 
 %clearfix {
     &:after {

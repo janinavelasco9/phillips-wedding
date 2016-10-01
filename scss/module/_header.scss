@@ -1,9 +1,13 @@
 // Site Header Styles
 .site-header {
     background-color: $white;
-    padding: 0 .8em;
+    padding: 0;
     position: fixed;
     text-align: center;
     top: 0;
     width: 100%;
+
+    @media screen and (min-width: $mobile-breakpoint) {
+        padding: 0 .8em;
+    }
 }

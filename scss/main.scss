@@ -1,4 +1,4 @@
-@import "layout";
+@import "config";
 
 @import "base/colors";
 @import "base/links";
@@ -8,5 +8,6 @@
 
 @import "module/header";
 @import "module/hero";
+@import "module/navigation";
 @import "module/stack-split";
 @import "module/section";

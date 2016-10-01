@@ -1,4 +1,4 @@
-.l-stack-split {
+.stack-split {
     @extend %clearfix;
     display: block;
 
@@ -7,12 +7,12 @@
     }
 }
 
-.l-stack-split__item {
+.stack-split__item {
     @extend %clearfix;
     flex: 1;
 }
 
-.l-stack-split__item:first-child {
+.stack-split__item:first-child {
     margin-right: 0;
     margin-bottom: .5em;
 
