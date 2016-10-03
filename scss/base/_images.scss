@@ -1,11 +1,9 @@
 .image {
-    width: 768px;
     margin: 0 auto;
     padding: 0 1em;
     max-width: 100%;
 }
 
-.image-small {
-    @extend .image;
-    width: 400px;
+.image--stacked {
+    margin-bottom: 1em;
 }
