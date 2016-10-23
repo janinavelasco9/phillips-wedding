@@ -1,10 +1,13 @@
 var express = require('express');
 var app = express();
 var nodemailer = require('nodemailer');
+var bodyParser = require('body-parser');
 
-// var router = express.Router();
-// app.use('/rsvp', router);
-// router.post('/rsvp', handleRsvp); // handle the route at yourdomain.com/sayHello
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
+app.use(bodyParser.json());
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -30,6 +33,10 @@ app.get('/details', function(request, response) {
   response.render('pages/details');
 });
 
+app.get('/thank-you', function(request, response) {
+  response.render('pages/thank-you');
+});
+
 app.get('/rsvp', function(request, response) {
   response.render('pages/rsvp');
 });
@@ -39,16 +46,16 @@ app.post('/rsvp', function(req, res) {
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: '', // Your email id
-            pass: '' // Your password
+            user: 'jvelasco0226@gmail.com', // Your email id
+            pass: 'Hobow25!' // Your password
         }
     });
 
-    var text = 'Hello world from \n\n' + req.body.name;
+    var text = 'Hello world from \n\n' + req.body.firstName;
 
     var mailOptions = {
-        from: '', // sender address
-        to: '', // list of receivers
+        from: 'jvelasco0226@gmail.com', // sender address
+        to: 'jvelasco0226@gmail.com', // list of receivers
         subject: 'Email Example', // Subject line
         text: text //, // plaintext body
         // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
@@ -62,10 +69,9 @@ app.post('/rsvp', function(req, res) {
             res.json({yo: 'error'});
         }else{
             console.log('Message sent: ' + info.response);
-            res.json({yo: info.response});
+            res.redirect('/thank-you');
         };
     });
-    console.log('testtt');
 });
 
 app.listen(app.get('port'), function() {
