@@ -51,7 +51,7 @@ app.post('/rsvp', function(req, res) {
         }
     });
 
-    var text = 'Hello world from \n\n' + req.body.firstName;
+    var text = req.body.firstName + req.body.lastName + 'said ' + req.body.message  ;
 
     var mailOptions = {
         from: 'jvelasco0226@gmail.com', // sender address
@@ -60,8 +60,6 @@ app.post('/rsvp', function(req, res) {
         text: text //, // plaintext body
         // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
     };
-
-    console.log('test');
 
     transporter.sendMail(mailOptions, function(error, info){
         if(error){
