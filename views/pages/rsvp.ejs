@@ -4,30 +4,49 @@
 <div class="app">
     <section class="hero">
         <div class="hero__image">
-            <img class="image-small" src="images/janina-mark-ball.jpg" alt="" />
+            <img class="image" src="images/janina-mark-ball.jpg" alt="" />
         </div>
     </section>
 
     <div class="container">
+        <h1>
+            Wedding Shower RSVP
+        </h1>
+        <p>
+            Please RSVP by January 4th, 2017
+        </p>
         <form action="/rsvp" method="post" class="form">
-            <div>
-                <label for="">First Name</label>
-                <input type="text" name="firstName">
+            <div class="form-group">
+                <div class="input-field input-field--group">
+                    <label for="">First Name</label>
+                    <input class="text-input" type="text" name="firstName">
+                </div>
+                <div class="input-field input-field--group">
+                    <label for="">Last Name</label>
+                    <input class="text-input" type="text" name="lastName">
+                </div>
             </div>
-            <div>
-                <label for="">Last Name</label>
-                <input type="text" name="lastName">
-            </div>
-            <div>
+
+            <div class="input-field">
                 <label for="">Email</label>
-                <input type="text" name="email">
+                <input class="text-input" type="text" name="email">
             </div>
-            <div>
+
+            <div class="input-field">
                 <label for="">Message Subject</label>
-                <input type="text" name="message">
+                <input class="text-input" type="text" name="message">
             </div>
+
+            <!-- <div class="">
+                <label for="">Will you be there?</label>
+                <div class="">
+                    <input class="checkbox" type="checkbox" id="yes" value="yes">Yes
+                </div>
+
+            </div> -->
+
             <div>
-                <input type="submit" value="Submit" name="submit"/>
+                <input class="btn" type="submit" value="Submit" name="submit"/>
             </div>
         </form>
     </div>
