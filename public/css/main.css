@@ -90,7 +90,8 @@ img {
   max-width: 250px;
   text-transform: uppercase;
   overflow: hidden;
-  border: 1px solid currentColor; }
+  border: 1px solid currentColor;
+  -webkit-appearance: none; }
   .btn:hover, .btn:focus {
     background-color: #E28FA5;
     color: #FFF; }
