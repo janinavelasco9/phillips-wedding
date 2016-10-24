@@ -73,6 +73,7 @@
     text-transform: uppercase;
     overflow: hidden;
     border: 1px solid currentColor;
+    -webkit-appearance: none;
 
     &:hover,
     &:focus{
