@@ -28,6 +28,10 @@ img {
     @extend %clearfix;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 %clearfix {
     &:after {
         content: "";

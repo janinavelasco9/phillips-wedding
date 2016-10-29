@@ -20,6 +20,9 @@ img {
   margin-right: auto;
   padding: 0 1em; }
 
+.no-wrap {
+  white-space: nowrap; }
+
 .container:after, h1:after, h2:after, h3:after,
 .primary-heading:after,
 .secondary-heading:after,

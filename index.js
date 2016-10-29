@@ -46,16 +46,16 @@ app.post('/shower-rsvp', function(req, res) {
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: 'jvelasco0226@gmail.com', // Your email id
-            pass: 'Hobow25!' // Your password
+            user: '', // Your email id
+            pass: '' // Your password
         }
     });
 
     var text = req.body.firstName + ' ' + req.body.lastName + ' answered ' + req.body.attending +  ' to attending the shower ';
 
     var mailOptions = {
-        from: 'jvelasco0226@gmail.com', // sender address
-        to: 'jvelasco0226@gmail.com', // list of receivers
+        from: '', // sender address
+        to: '', // list of receivers
         subject: 'Shower RSVP', // Subject line
         text: text //, // plaintext body
         // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
