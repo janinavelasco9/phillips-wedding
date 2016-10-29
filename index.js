@@ -41,7 +41,7 @@ app.get('/rsvp', function(request, response) {
   response.render('pages/rsvp');
 });
 
-app.post('/rsvp', function(req, res) {
+app.post('/shower-rsvp', function(req, res) {
     // Not the movie transporter!
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
@@ -51,12 +51,12 @@ app.post('/rsvp', function(req, res) {
         }
     });
 
-    var text = req.body.firstName + req.body.lastName + 'said ' + req.body.message  ;
+    var text = req.body.firstName + ' ' + req.body.lastName + ' answered ' + req.body.attending +  ' to attending the shower ';
 
     var mailOptions = {
         from: 'jvelasco0226@gmail.com', // sender address
         to: 'jvelasco0226@gmail.com', // list of receivers
-        subject: 'Email Example', // Subject line
+        subject: 'Shower RSVP', // Subject line
         text: text //, // plaintext body
         // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
     };

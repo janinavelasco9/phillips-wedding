@@ -15,35 +15,28 @@
         <p>
             Please RSVP by January 4th, 2017
         </p>
-        <form action="/rsvp" method="post" class="form">
+
+        <form action="/shower-rsvp" method="post" class="form">
             <div class="form-group">
                 <div class="input-field input-field--group">
                     <label for="">First Name</label>
-                    <input class="text-input" type="text" name="firstName">
+                    <input class="text-input" type="text" name="firstName" required data-required-message="First name is required.">
                 </div>
                 <div class="input-field input-field--group">
                     <label for="">Last Name</label>
-                    <input class="text-input" type="text" name="lastName">
+                    <input class="text-input" type="text" name="lastName" required data-required-message="Last name is required.">
                 </div>
             </div>
 
             <div class="input-field">
                 <label for="">Email</label>
-                <input class="text-input" type="text" name="email">
+                <input class="text-input" type="text" name="email" required data-required-message="Email is required." data-type-message="You must provide a valid email address.">
             </div>
 
             <div class="input-field">
-                <label for="">Message Subject</label>
-                <input class="text-input" type="text" name="message">
+                <label for="">Will you be attending?</label>
+                <input class="text-input" type="text" name="attending" required data-required-message="Answer is required.">
             </div>
-
-            <!-- <div class="">
-                <label for="">Will you be there?</label>
-                <div class="">
-                    <input class="checkbox" type="checkbox" id="yes" value="yes">Yes
-                </div>
-
-            </div> -->
 
             <div>
                 <input class="btn" type="submit" value="Submit" name="submit"/>

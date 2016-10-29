@@ -1,4 +1,5 @@
-section {
+section,
+.section {
     margin-bottom: 2em;
 }
 
@@ -15,5 +16,5 @@ section {
 
 .section-title {
     color: $black;
-    margin-bottom: 0;
+    margin-bottom: 0.8rem;
 }

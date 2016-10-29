@@ -31,12 +31,13 @@ h3,
 .sub-heading {
     font-size: 1.3em;
     color: $black;
+    margin-bottom: .8rem;
 }
 
 p,
 .body-copy {
     color: $gray-dark;
-    margin-bottom: .3em;
+    margin: 0 0 1rem 0;
 }
 
 .text-important {
